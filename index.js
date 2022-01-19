@@ -28,10 +28,10 @@ const options = {
 const specs = swaggerJsDoc(options); // initialize the swagger js docs
 
 // Import Router
-const testRouter = require('./routes/test');
+const userRouter = require('./routes/user');
 
 // Connect Router to Express
-app.use(testRouter);
+app.use(userRouter);
 
 app.use(
     "/api-docs",
